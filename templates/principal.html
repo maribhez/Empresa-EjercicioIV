@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block header %}
+  {% include "aux/header.html" %}
+
+{% endblock %}
+
+{% block principal %}
+
+  {% if name %}
+    <center><p style = "color:Cyan "> Las empresas existentes hasta el moment son: {{name}} </p>
+            <p style = "color: Cyan"> Recuerde el nombre para poder valorar. </p></center>
+
+  {% else %}
+    <p> No hay nada que mostrar </p>
+  {% endif %}
+{% endblock %}

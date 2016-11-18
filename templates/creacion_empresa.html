@@ -1,0 +1,21 @@
+
+<div class="container-fluid">
+    <div class="row content content-wrapper">
+        <div class="col-sm-9 body-wrapper">
+
+              <h4><bold>Introduzca una empresa con su calificación.</bold></h4>
+              <form class="signup-form" action="/creacion_empresa" method="POST">
+                <div class="form-group">
+                  <label for="nombre_empresa">Nombre empresa:</label>
+                  <input type="text" class="form-control" name="nombre_empresa" id="nombre_empresa">
+                </div>
+                <div class="form-group">
+                  <label for="calificacion">Calificación:</label>
+                   <input type="number" name="calificacion" id = "calificacion" min="1" max="10">
+
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+      </div>
+  </div>

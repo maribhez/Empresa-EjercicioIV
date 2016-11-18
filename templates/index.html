@@ -1,0 +1,53 @@
+<!doctype html>
+
+<head>
+   {% block head %}
+    <link rel= "stylesheet" type= "text/css" href= "static/styles.css">
+    <style>body {background-color: SeaGreen   ;}</style>
+    <title>{% block title %}{% endblock %} - IV - Hito 2 </title>
+   {% endblock %}
+</head>
+
+
+<html lang="es">
+<body background-color: "navy">
+  <div id="content">
+
+    <div id = "cabecera">
+      {% block header %}
+          {% include "aux/header.html" %}
+      {% endblock %}
+    </div>
+
+    <div id = "menu">
+
+      {% block menu %}{% endblock %}
+    </div>
+
+
+    <div id = "contenido">
+
+        <div id = "principal">
+          {% block principal %}
+          {% endblock %}
+
+        </div>
+
+        <div id = "secundario">
+
+          {% block secundario %}{% endblock %}
+
+        </div>
+     </div>
+
+     <div id="footer">
+       {% block footer %}
+        {% endblock %}
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
