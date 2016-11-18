@@ -8,7 +8,6 @@ install:
   - sudo apt-get install python-virtualenv
   - pip install Flask
   - pip install Flask-Shelve
-  - sudo apt-get install python-itsdangerous
   - pip install Jinja2
 
 
