@@ -4,6 +4,13 @@ python:
 
 sudo: required
 # command to install dependencies
-install: "pip install -r req.txt"
+install:
+  - sudo apt-get install python-virtualenv
+  - pip install Flask
+  - pip install Flask-Shelve
+  - sudo apt-get install python-itsdangerous
+  - pip install Jinja2
+
+
 # command to run tests
 script: "python -m pytest"
